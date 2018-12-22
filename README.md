@@ -1,4 +1,4 @@
-# Indonesia Dictionary
+# Kamus Bahasa Indonesia
 
 ## Description
 
@@ -7,5 +7,11 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 
 ## Usage
 
-### Header 3
+### Insert
+
+### Search
+
+### Exercise
+
+### Quit
 
