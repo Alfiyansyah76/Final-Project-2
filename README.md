@@ -19,5 +19,5 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 
 ### Keluar
 
-##Code
+## Code
 
