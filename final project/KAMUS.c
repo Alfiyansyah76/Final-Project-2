@@ -103,6 +103,7 @@ int main (void)
 				printf(" Input kata kunci: ");
 				gets(key);
 				realloc(key,(strlen(key)+1)*sizeof(char));
+				up_str(key);
 				while(temp!=NULL)
                 {
                     if(strcmp(key,temp->kata)==0)
