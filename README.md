@@ -14,15 +14,17 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 <br>                        Teknik Komputer
 <br>                     Universitas Indonesia</p>
 
-## Menu
+## MENU
 
-### Input
+### Lihat Kamus
 
 ### Cari
+
+### Masukan Kata
 
 ### Latihan
 
 ### Keluar
 
-## Code
+## CODE
 
