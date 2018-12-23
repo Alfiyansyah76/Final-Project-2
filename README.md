@@ -12,7 +12,7 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 <p>Created by:
   <br>              Aqdam Zain Hajj & Muhammad Alfiyansyah 
 <br>                        Teknik Komputer
-                     Universitas Indonesia</p>
+<br>                     Universitas Indonesia</p>
 
 ## Menu
 
