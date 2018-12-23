@@ -16,6 +16,8 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 
 ## MENU
 
+<img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Menu.JPG" alt="Menu">
+
 ### Lihat Kamus
 
 ### Cari
