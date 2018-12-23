@@ -1,6 +1,7 @@
 # Kamus Bahasa Indonesia
 * [Deskripsi](#deskripsi)
 * [Menu](#Menu)
+* [Code](#code)
 
 
 ## Deskripsi
@@ -17,4 +18,6 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 ### Latihan
 
 ### Keluar
+
+##Code
 
