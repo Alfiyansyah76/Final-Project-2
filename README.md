@@ -21,6 +21,7 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 ### Lihat Kamus
 
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/List%20kata.JPG" alt="Lihat kamus">
+<p> Dapat melihat keseluruhan isi kamus.</p>
 
 ### Cari
 
