@@ -23,6 +23,15 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/List%20kata.JPG" alt="Lihat kamus">
 <p> Dapat melihat keseluruhan isi kamus.</p>
 
+<p>code</p>
+```go
+				system ("cls");
+				listkata (head);
+				printf("\nTekan Enter untuk lanjutkan: ");
+				getchar();
+				system ("cls");
+```
+
 ### Cari
 
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/Cari.JPG" alt="Lihat kamus">
