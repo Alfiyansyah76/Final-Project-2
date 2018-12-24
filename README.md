@@ -146,6 +146,7 @@ int main (void)
 <p>Pencarian menggunakan sequential search pada linked list.</p>
 
 <p>Code:</p>
+
 ```go
 			case 2://Cari kata
 				system ("cls");
