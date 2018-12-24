@@ -505,17 +505,130 @@ void listkata (kamusPtr headR) // Display the content of all node in linked list
 <p>Code</p>
 
 ```go
-void listkata (kamusPtr headR) // Display the content of all node in linked list to screen
+void inputKata(kamusPtr *headW)// Input new node and the content to the linked list
 {
-	kamusPtr temp = headR;
-	printf ("\n\n\t\t\t\t========================================\n");
-	printf ("\t\t\t\t                LIST KATA                   \n");
-    while(temp!=NULL)
+    kamusPtr temp, prevNode = NULL;
+    int n,i;
+    char pilih;
+
+    char* inKata = malloc(100*sizeof(char));
+    printf(" Masukan Kata: ");
+    gets(inKata);
+    realloc(inKata, (strlen(inKata)+1)*sizeof(char));
+    up_str(inKata);
+
+    char* inDef = malloc(200*sizeof(char));
+    printf(" Masukan Definisi: ");
+    gets(inDef);
+    realloc(inDef, (strlen(inDef)+1)*sizeof(char));
+    up_str(inDef);
+
+    char* inTipe = malloc(100*sizeof(char));
+    printf(" Masukan Tipe Kata: ");
+    gets(inTipe);
+    realloc(inTipe, (strlen(inTipe)+1)*sizeof(char));
+    up_str(inTipe);
+
+
+    printf(" Anda yakin ingin masukan kata?(y/n): ");
+    scanf("%c", &pilih);
+    getchar();
+
+    if(pilihan_yn(pilih)==0)
     {
-        printf ("\t\t\t\t+-Kata\t   : %s\n", temp->kata);
-        printf ("\t\t\t\t+-Definsi  : %s\n", temp->definisi);
-        printf ("\t\t\t\t+-Tipe\t   : %s\n\n", temp->tipe);
-        temp = temp->next;
+        kamusPtr inKamus = malloc(sizeof(kamus));
+        inKamus->kata = inKata;
+        inKamus->definisi = inDef;
+        inKamus->tipe = inTipe;
+        inKamus->next = NULL;
+
+        if(*headW!=NULL)
+        {
+            i = 0;
+            temp = *headW;
+
+            while(temp!=NULL)
+            {
+                if(strlen(inKamus->kata)<strlen(temp->kata))
+                {
+                    n = strlen(inKamus->kata);
+                    i = 0;
+                    while(i<n)
+                    {
+                        if(inKamus->kata[i]==temp->kata[i])
+                        {
+                            i++;
+                        }
+                        else if(inKamus->kata[i]>temp->kata[i])
+                        {
+                            i = n+1;
+                        }
+                        else
+                        {
+                            i = n;
+                        }
+                    }
+                    i = i-1 ;
+                }
+                else
+                {
+                    n = strlen(temp->kata);
+                    i = 0;
+                    while(i<n)
+                    {
+                        if(inKamus->kata[i]==temp->kata[i])
+                        {
+                            i++;
+                        }
+                        else if(inKamus->kata[i]>temp->kata[i])
+                        {
+                            i = n;
+                        }
+                        else
+                        {
+                            i =n+1;
+                        }
+                    }
+                }
+                if(i==n)
+                {
+                    if(inKamus->next==NULL)
+                    {
+                        prevNode = temp;
+                        inKamus->next = prevNode->next;
+                        prevNode->next = inKamus;
+                        temp = inKamus->next;
+                    }
+                    else
+                    {
+                        prevNode->next = temp;
+                        prevNode = temp;
+                        inKamus->next = prevNode->next;
+                        prevNode->next = inKamus;
+                        temp = inKamus->next;
+                    }
+
+                }
+                else
+                {
+                    if(inKamus->next==NULL)
+                    {
+                        inKamus->next = temp;
+                        *headW = inKamus;
+                    }
+                    temp = NULL;
+                }
+
+            }
+
+        }
+        else
+        {
+
+            *headW = inKamus;
+        }
+
     }
 }
+
 ```
