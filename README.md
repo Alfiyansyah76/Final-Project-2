@@ -142,6 +142,35 @@ int main (void)
 ### Cari
 
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/Cari.JPG" alt="Lihat kamus">
+<p>Mencari kata dalam kamus dengan memasukan kata kunci yang sesuai dengan kata yang dicari.</p>
+<p>Pencarian menggunakan sequential search pada linked list.</p>
+
+<p>Code:</p>
+```go
+			case 2://Cari kata
+				system ("cls");
+				temp = head;
+				key = malloc(100*sizeof(char));
+				printf(" Input kata kunci: ");
+				gets(key);
+				realloc(key,(strlen(key)+1)*sizeof(char));
+				up_str(key);
+				while(temp!=NULL)
+                {
+                    if(strcmp(key,temp->kata)==0)
+                    {
+                        printf("Kata:       %s\n", temp->kata);
+                        printf("Definisi:   %s\n", temp->definisi);
+                        printf("Tipe:       %s\n", temp->tipe);
+                    }
+                    temp = temp->next;
+                }
+				getch();
+				//free the memory allocation after used
+				free(key);
+				system ("cls");
+				break;
+```
 
 ### Masukan Kata
 
