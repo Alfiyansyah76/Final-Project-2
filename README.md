@@ -150,7 +150,7 @@ int main (void)
 
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
 
-### Cari
+### Cari Kata
 
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/Cari.JPG" alt="Lihat kamus">
 <p>Mencari kata dalam kamus dengan memasukan kata kunci yang sesuai dengan kata yang dicari.</p>
@@ -192,7 +192,7 @@ int main (void)
 
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
 
-### Latihan
+### Latihan Kata
 
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/soal1.JPG" alt="Lihat kamus">
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/soal2.JPG" alt="Lihat kamus">
