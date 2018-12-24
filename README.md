@@ -18,12 +18,107 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/Menu.JPG" alt="Menu">
 
+<p>code:</p>
+```go
+#include "kamus.h" // terdapat struct dan semua fungsi modular yang mendukung applikasi kamus
+
+#include <conio.h>
+#include <windows.h>
+#include <process.h>
+
+
+
+void gotoxy (int x, int y)
+{
+	COORD coord;
+	coord.X=x;
+	coord.Y=y;
+
+	SetConsoleCursorPosition (GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
+
+
+int main (void)
+{
+	int r,q;
+	kamusPtr head = NULL, headCpy = NULL, node = NULL, temp;
+	int choice, soal;
+
+	gotoxy(50,25);
+	printf("Loading....");
+	gotoxy(50,27);
+	for (r=1; r<=20; r++)
+		{
+			for (q=0; q<=100000000; q++);
+			printf ("%c", 177);
+		}
+
+		inputKamus(&head);
+	do
+	{
+
+		system ("cls");
+		/*printf ("\n\n\t\t\t\t========================================\n");
+		printf ("\t\t\t\t========================================\n");
+		printf ("\t\t\t\t+        KAMUS BAHASA INDONESIA        +");
+		printf ("\n\t\t\t\t+                                      +");
+		printf ("\n\t\t\t\t+ 1. Lihat Kamus                       +");
+		printf ("\n\t\t\t\t+ 2. Cari Kata                         +");
+		printf ("\n\t\t\t\t+ 3. Insert Kata                       +");
+		printf ("\n\t\t\t\t+ 4. Latihan Kata                      +");
+		printf ("\n\t\t\t\t+ 5. Help                              +");
+		printf ("\n\t\t\t\t+ 6. Exit                              +");
+		printf ("\n\t\t\t\t+                                      +");
+		printf ("\n\t\t\t\t+             COPYRIGHT                +");
+		printf ("\n\t\t\t\t========================================");
+		printf ("\n\t\t\t\t========================================");*/
+		printf("  		    `-::://///:+...-.......-..`                `--....--.........`                \n"
+"	            .s::::///::--`             .---.         ---.`                `----`                    \n"
+"	       ``...-o::--`                       `.:-     -:.```                      .--.                 \n"
+"	      -+```         KAMUS                  ``.:- .:.`````  BAHASA INDONESIA       `...-...-.`       \n"
+"	 `--/:./                                   ````-o:```````                                 :`-+--.   \n"
+"	+yyo/-`/                                   `````+.```````    .....................        : .+..ss. \n"
+"	yy:..-`:`                                  `````/.```````                                 : ./` +y+ \n"
+"	yy/.`-`:`     1. Lihat Kamus               `````:.```````    .....................        : ..` +yo \n"
+"	sy+.`.`-.                                  `````:-```````                                 / ` ` /yo \n"
+"	oyo..``.-     2. Cari Kata                 `````-:```````    .....................        /   ` /yo \n"
+"	+ys..```/                                  `````.:```````                                 : `   /yo \n"
+"	/yy..```/     3. Masukan Kata              `````./```````    .....................       `:`.   /y+ \n"
+"	:yh-.```/                                  `````./```````                                ..`.   /y/ \n"
+"	.yy:.```:`    4. Latihan Kata              `````./```````    .....................       :```   +y: \n"
+"	`yy+````-.                                 `````./```````                                / .`   oy- \n"
+"	 yyo`````:    5. Bantuan                   `````./```````    .....................      `: .`   sh. \n"
+"	 ssy```` /                                 `````./```````                               -.`. . `yy` \n"
+"	 +yy.`.``:`   6. Keluar                    `````./```````    .....................      / `  - `ys  \n"
+"	 /yy-`..`-.                                ``````/```````                              .- ` .. -yo  \n"
+"	 -yy/``- `:                                ``````/```````    ```.------.----...```     :` ` :` /y/  \n"
+"	 `hyo``:` /       ````...............```  ```````/````````.-............``````.....--`.:  ``/  sy-  \n"
+"	  yys`.-. :` ``--.....```````````````...--.``````/`````--..  `` `````                `-:```:- `yy`  \n"
+"	  osy...: -:...      ````       ````````` .--.``./``.:-`  ``.``.`````````              `-:`+` -ys   \n"
+"	  /yy-.`+--`       ``..-:///+++++++/:-.```   .:-./.:-` ``..:+ossyyyyyyysso++/:.``````....:o:  +y/   \n"
+"	  -yy+.::`   ``.-/oosyhhyyyyyyyyyyyyyhhys/.`  `-/o:.`  `/shhhyyyyyyyyyyyyyyyyhhyso+:-.`...-:-`yy.   \n"
+"	  `hss/-.-:+osyhhyyyhhhhhhhhhhhhhhhyyysyhdh+.` .-+-.` -yddyyyyyyhhhhhhhhhhhhhhhhyyyhhyso+//:/oys    \n"
+"	   syhhhhhhhhhhyysso+//:::--..``        sdhyoo+++o+++oyhhd-        ``..-::://++ossyyhhhhhhhhyyh:    \n"
+"	   ./+/:--.`                            `-/+ossssssssso+:.                            `..-::/+:");
+		printf ("\n\t\t\t\tInput Pilihan :");
+		scanf ("%d", &choice);
+		getchar();
+		int llen, radnum, correct, jwb, i, j;
+		kamusPtr* soalArr;
+		char** jwbArr;
+		int* intArr;
+		char* key;
+		char pilihC;
+		switch (choice)
+		{
+```
+
 ### Lihat Kamus
 
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/List%20kata.JPG" alt="Lihat kamus">
 <p> Dapat melihat keseluruhan isi kamus.</p>
 
-<p>code</p>
+<p>code:</p>
 
 ```go
 			case 1://Lihat kata
