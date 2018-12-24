@@ -632,3 +632,7 @@ void inputKata(kamusPtr *headW)// Input new node and the content to the linked l
 }
 
 ```
+
+<p>Dengan menerima input "head" dari linked list, Modular inputKata berfungsi unput menginput kata baru ke dalam linked list. Kata yang telah diinput akan disusun sesuai abjad pada linked list dengan membandingkan setiap node pada linked list dengan input kata secara sequential.</p>
+
+[Kembali ke daftar isi](#kamus-bahasa-indonesia)
