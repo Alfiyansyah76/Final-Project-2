@@ -56,7 +56,13 @@ struct node n;
 
 <img src="Image/8831.jpg" width="360">
 
-untuk mengubah atau megakses isinya dengan cara berikut: `n.x` untuk data x tau jika dalam pointer misal `q = &n` kemudian `q->x` untuk mengakses data x.
+untuk mengubah atau megakses isinya dengan cara berikut: `n.x` untuk data x atau jika dalam pointer misal `q = &n` kemudian `q->x` untuk mengakses data x.
+
+* Linked List
+<p> linked list adalah linear collection dari self-referential structures, yang disebut node, terhubung oleh rantai pointer. Node berikutnya diakses melalui rantai pointer yang disimpan oleh anggota
+setiap node.
+
+<img src="Image/8832.jpg" width="360">
 
 ## MENU
 
