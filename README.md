@@ -29,6 +29,7 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 <p>Pointer merupakan variabel yang menyimpan address dari memori(variabel lain)</p>
 
 Contohnya, yaitu: `int* x = &y`  ( `&y` artinya adalah address dari variabel y sendangkan ``int* x`` adalah variabel x sebagai pointer).
+
 <img src="Image/8802.jpg" width="360">
 
 * Struct
