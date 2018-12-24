@@ -25,7 +25,8 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 
 <p>Aplikasi Kami menggunakan bahasa pemprogramman C. kami merasa perlu menjelaskan mengenai pointer, struct, dan linked list karena sangat penting penggunaanya bagi program kami.</p>
 
-* Struct
+* Pointer
+<p>Pointer merupakan variabel yang menyimpan address dari memori(variabel lain)</p>
 	
 
 ## MENU
