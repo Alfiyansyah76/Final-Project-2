@@ -128,6 +128,7 @@ int main (void)
 	}while (choice!=-1);
 }
 ```
+[Kembali ke daftar isi](#Keluar)
 
 ### Lihat Kamus
 
