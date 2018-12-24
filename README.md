@@ -306,13 +306,81 @@ case 3://Masukan kata
 
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/soal1.JPG" alt="Lihat kamus">
 <p>Menentukan jumlah soal latihan sesuai dengan yang dinginkan</p>
+<p>Code:</p>
+
+```go
+                printf(" Masukan jumlah soal: ");
+                scanf("%d", &soal);
+```
+
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/soal2.JPG" alt="Lihat kamus">
 <p>Memilih jawaban pada soal</p>
+<p>Code:</p>
+
+```go
+                for(i=0; i<soal; i++) // mengambil soal dari linked list
+                {
+                    radnum = rand()%(llen);
+                    takeNode(&headCpy, radnum, &node);
+                    soalArr[i] = node; // Memasukan address node yang telah diambil dari list ke dalam array
+                    // soalArr = kumpulan address dari node yang akan menjadi soal dari latihan
+                    llen = llen-1;
+                }
+
+                for(i=0; i<soal; i++)
+                {
+                    randnumArr(intArr, 4);
+                    do
+                    {
+                        printf(" %s\n\n", (soalArr[i]->definisi));
+                        jwbArr[intArr[0]] = soalArr[i]->kata;//Input pilihan benar ke array dengan nilai index yg random sesuai urutan
+                        for(j=1; j<4; j++)
+                        {//input pilihan salah ke array dengan nilai index yg random sesuai urutan
+                            answerChKat(head, listLen(head), soalArr[i]->kata, &jwbArr[intArr[j]]);//mengambil pilihan salah dari linked list secara acak yang berbeda dengan
+                                                                                                        //pilihan benar.
+                        }
+                        for(j=0; j<4; j++)
+                        {
+                            printf(" %d. %s\n",(j+1), jwbArr[j]);
+                        }
+                        printf(" Jawaban: ");
+                        scanf("%d", &jwb);
+                        getchar();
+                        system("cls");
+
+                    }while(jwb<1 || jwb>4);
+
+                    if(strcmp(jwbArr[jwb-1], soalArr[i]->kata)==0)//menghitung nilai jawaban yang benar
+                    {
+                        correct = correct + 1;
+                        printf("\a");
+                        printf("\n BENAR!\n");
+                    }
+                    else
+                    {
+                        printf("\n SALAH!\n");
+                    }
+                    Sleep(200);
+                    system("cls");
+                }
+```
+
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/Soal3.JPG" alt="Lihat kamus">
 <p>Menampilkan seluruh hasil dari jawaban pada soal</p>
 <p>Code:</p>
 
+```go
+                printf("\n\n Jumlah Benar: %d\n", correct);
+                printf(" Salah       : %d\n", (soal-correct));
 
+                printf("\n Kunci Jawaban: \n");
+
+                for(i=0; i<soal; i++)
+                {
+                    printf(" %d. Definisi: %s\n", (i+1), soalArr[i]->definisi);
+                    printf("     Kata    : %s\n\n", soalArr[i]->kata);
+                }
+```
 
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
 
