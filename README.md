@@ -27,7 +27,7 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 
 * Pointer
 <p>Pointer merupakan variabel yang menyimpan address dari memori(variabel lain)</p>
-<p>Contohnya, yaitu: `int* x = &y` ( "&y" artinya adalah address dari variabel y sendangkan int* x adalah variabel x sebagai pointer).
+Contohnya, yaitu: `t* x = &y` ( "&y" artinya adalah address dari variabel y sendangkan int* x adalah variabel x sebagai pointer).
 
 * Struct
 <p>Sebuah struct dalam bahasa pemrograman C adalah deklarasi tipe data komposit yang mendefinisikan daftar variabel yang dikelompokkan untuk ditempatkan di bawah satu nama dalam blok memori, yang memungkinkan variabel yang berbeda untuk diakses melalui satu pointer</p>
