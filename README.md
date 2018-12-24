@@ -8,7 +8,7 @@
 	+ [Masukan Kata](#Masukan-Kata)
 	+ [Latihan Kata](#Latihan-Kata)
 	+ [Keluar](#Keluar)
-* [HEADER kamus.h](#HEADER-kamush)
+* [Header kamus.h dan Fungsi Modular](#HEADER-kamush)
 
 
 ## DESKRIPSI
