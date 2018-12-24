@@ -865,4 +865,36 @@ void inputKamus(kamusPtr* headW) // Make linked list from file
 <br>5. Jika karakternya lebih besar. input kata bertukar tempat kebawah dengan node yang dibandingkan
 <br>6. Terus berulang sampai input kata tidak pindah kebawah
 
+### Modular randnumArr
+
+<p>Code:</p>
+
+```go
+void randnumArr(int* arNum, int x)// Generate each different random number in array
+{// arNum = Address of array; x number of the element in array or the amount of different random number in array
+    srand(time(0));
+    int i,j;
+
+    for(i=0; i<x; i++)
+    {
+        arNum[i] = -1;
+    }
+    for(i=0; i<x; i++)
+    {
+            arNum[i] = rand()%x;
+            for(j=0; j<i; j++)
+            {
+                if(arNum[j]==arNum[i])
+                {
+                    arNum[i] = -1;
+                    i = i - 1;
+                    j = i;
+                }
+            }
+    }
+}
+```
+
+<p>Modular randnumArr berfungsi memasukan angka(integer mulai dari 0) yang berurutan secara acak ke dalam array. Cara kerjanya yaitu jika nilai 2 telah didapatkan dan dimasukan ke dalam array index 0, nilai 2 tidak boleh masuk kedalam index berikutnya jika muncul kembali, seterusnya berlaku untuk bilangan lainya.</p>
+
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
