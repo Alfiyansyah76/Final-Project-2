@@ -633,6 +633,25 @@ void inputKata(kamusPtr *headW)// Input new node and the content to the linked l
 
 ```
 
-<p>Dengan menerima input "head" dari linked list, Modular inputKata berfungsi unput menginput kata baru ke dalam linked list. Kata yang telah diinput akan disusun sesuai abjad pada linked list dengan membandingkan setiap node pada linked list dengan input kata secara sequential.</p>
+<p>Dengan menerima input "head" dari linked list, Modular inputKata berfungsi untuk menginput kata baru ke dalam linked list. Kata yang telah diinput akan disusun sesuai abjad pada linked list dengan membandingkan setiap node pada linked list dengan input kata secara sequential.</p>
 
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
+
+### Modular listLen
+
+<p>Code:</p>
+
+```go
+int listLen(kamusPtr headR)// Get the length of the linked list (the amount of nodes in linked list)
+{
+    int i=0;
+    while(headR!=NULL)
+    {
+        i++;
+        headR = headR->next;
+    }
+    return i;
+}
+```
+
+<p> Menghitung jumlah node pada linked list</p>
