@@ -385,6 +385,30 @@ case 3://Masukan kata
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
 
 ### Keluar
+<p>Code:</p>
+
+```go
+    		case 6://Keluar
+    		    printf("\a\n\n\t Anda yakin ingin keluar aplikasi?(y/n): ");
+    		    scanf("%c", &pilihC);
+    		    getchar();
+
+    		    //free the memory allocation after used
+    		    if(pilihan_yn(pilihC)==0)
+                {
+                    while(headCpy!=NULL)
+                    {
+                        temp = headCpy;
+                        headCpy = headCpy->next;
+
+                        free(temp->definisi);
+                        free(temp->kata);
+                        free(temp->tipe);
+                        free(temp);
+                    }
+                    return 0;
+                }
+```
 
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
 
