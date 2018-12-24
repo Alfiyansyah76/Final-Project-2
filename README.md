@@ -649,6 +649,14 @@ void inputKata(kamusPtr *headW)// Input new node and the content to the linked l
 
 <p>Dengan menerima input "head" dari linked list, Modular inputKata berfungsi untuk menginput kata baru ke dalam linked list. Kata yang telah diinput akan disusun sesuai abjad pada linked list dengan membandingkan setiap node pada linked list dengan input kata secara sequential.</p>
 
+<p>Teknik sorting input pada linked list berdasarkan abjad adalah sebagai berikut:
+<br>1. Pertama node di masukan kedalam list dengan metode stack, kemudian
+<br>2. Membandingkan panjang "kata" dalam input node dengan node dibawahnya
+<br>3. Selanjutnya membandingkan tiap karakter pada input kata dengan node yang dibandingkan
+<br>4. Jika karakternya sama maka operasi berlanjut
+<br>5. Jika karakternya lebih besar. input kata bertukar tempat kebawah dengan node yang dibandingkan
+<br>6. Terus berulang sampai input kata tidak pindah kebawah
+
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
 
 ### Modular listLen
@@ -828,5 +836,12 @@ void inputKamus(kamusPtr* headW) // Make linked list from file
 <p>Membuat linked list yang bertipe kamus dengan input datanya berasal dari file. Cara kerjanya,yaitu:
 <br>1. Mengalokasikan memori untuk tiap node dan string data lalu menginput data dengan membacanya dari file secara sequential.
 <br>2. Setelah data diinput dari file data di sorting berdasarkan abjad pada linked list.</p>
+<p>Teknik sorting input pada linked list berdasarkan abjad adalah sebagai berikut:
+<br>1. Pertama node di masukan kedalam list dengan metode stack, kemudian
+<br>2. Membandingkan panjang "kata" dalam input node dengan node dibawahnya
+<br>3. Selanjutnya membandingkan tiap karakter pada input kata dengan node yang dibandingkan
+<br>4. Jika karakternya sama maka operasi berlanjut
+<br>5. Jika karakternya lebih besar. input kata bertukar tempat kebawah dengan node yang dibandingkan
+<br>6. Terus berulang sampai input kata tidak pindah kebawah
 
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
