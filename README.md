@@ -430,7 +430,25 @@ typedef struct node1 kamus;
 typedef kamus* kamusPtr;
 ```
 
-<p>Data type kamus adalah datatype struct yang dapan menyimpan string dari kata, definisi, dan tipe kata kemudian address dari struct berikutnya.</p>
-<p>Data type kamusPtr adalah datatype yang menyimpan address dari memori yang memiliki jenis data type kamus<p/>
+<p>Data type "kamus" adalah datatype struct yang dapan menyimpan string dari kata, definisi, dan tipe kata kemudian address dari struct berikutnya.</p>
+<p>Data type "kamusPtr" adalah datatype yang menyimpan address dari memori yang memiliki jenis data type kamus<p/>
+
+* Modular Up_str
+
+<p>Code:</p>
+
+```go
+void up_str(char* strW) // Capitalize first character of string
+{
+    int n = strW[0];
+
+    if(n > 90)
+    {
+        strW[0] = n - 32;
+    }
+}
+```
+<p>Fungsinya adalah membuat huruf depan pada string selal menjadi huruf kapital, yaitu dengan cara membandingkan index pertama dari string dengan code asscii dari karakter. Nilai yang lebih dari 90 puluh adalah berupa huruf kecil. jikai nilai ascii dari index pertama lebih dari 90 nilai asciinya dikurangi 32 sehingga menjadi huruf kapital.</p>
+
 
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
