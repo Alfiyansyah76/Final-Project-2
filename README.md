@@ -1,5 +1,7 @@
 # KAMUS BAHASA INDONESIA
 
+<p align="center"><img src="image/65341.png" width="360"></p>
+
 * [Deskripsi](#deskripsi)
 * [Penggunaan Bahasa Pemprogramman C](#PENGGUNAAN-BAHASA-PEMPROGRAMMAN-C)
 * [Penjelasan Menu](#MENU)
