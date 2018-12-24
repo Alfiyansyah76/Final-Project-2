@@ -89,14 +89,14 @@ int main (void)
 		char pilihC;
 		switch (choice)
 		{
-			case 1:
+			case 1://lihat kamus
 				system ("cls");
 				listkata (head);
 				printf("\nTekan Enter untuk lanjutkan: ");
 				getchar();
 				system ("cls");
 				break;
-			case 2:
+			case 2://Cari kata
 				system ("cls");
 				temp = head;
 				key = malloc(100*sizeof(char));
@@ -118,7 +118,7 @@ int main (void)
 				free(key);
 				system ("cls");
 				break;
-			case 3:
+			case 3://Masukan kata
 				system ("cls");
    				inputKata(&head);
    				printKamusF(head, listLen(head));
@@ -126,7 +126,7 @@ int main (void)
    				getchar();
    				system ("cls");
     			break;
-            case 4:
+            case 4://Latihan kata
                 system("cls");
                 printf(" Masukan jumlah soal: ");
                 scanf("%d", &soal);
@@ -209,7 +209,7 @@ int main (void)
                 getchar();
                 system("cls");
                 break;
-            case 5:
+            case 5://Bantuan
                 system("cls");
                 printf("\n\n        1. About\n");
                 printf("        2. tutorial\n");
@@ -244,7 +244,7 @@ int main (void)
                 getchar();
                 system("cls");
                 break;
-    		case 6:
+    		case 6://Keluar
     		    printf("\a\n\n\t Anda yakin ingin keluar aplikasi?(y/n): ");
     		    scanf("%c", &pilihC);
     		    getchar();
