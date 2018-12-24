@@ -213,13 +213,7 @@ case 3://Masukan kata
 
 ### Latihan Kata
 
-<img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/soal1.JPG" alt="Lihat kamus">
-<p>Menentukan jumlah soal latihan sesuai dengan yang dinginkan</p>
-<img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/soal2.JPG" alt="Lihat kamus">
-<p>Memilih jawaban pada soal</p>
-<img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/Soal3.JPG" alt="Lihat kamus">
-<p>Menampilkan seluruh hasil dari jawaban pada soal</p>
-<p>Code:</p>
+<p>Seluruh Code:</p>
 
 ```go
             case 4://Latihan kata
@@ -309,6 +303,16 @@ case 3://Masukan kata
                 system("cls");
                 break;
 ```
+
+<img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/soal1.JPG" alt="Lihat kamus">
+<p>Menentukan jumlah soal latihan sesuai dengan yang dinginkan</p>
+<img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/soal2.JPG" alt="Lihat kamus">
+<p>Memilih jawaban pada soal</p>
+<img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/Soal3.JPG" alt="Lihat kamus">
+<p>Menampilkan seluruh hasil dari jawaban pada soal</p>
+<p>Code:</p>
+
+
 
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
 
