@@ -1,7 +1,7 @@
 # KAMUS BAHASA INDONESIA
 * [Deskripsi](#deskripsi)
 * [Penggunaan Bahasa Pemprogramman C](#PENGGUNAAN-BAHASA-PEMPROGRAMMAN-C)
-* [Penjelasan Menu](#Menu)
+* [Penjelasan Menu](#MENU)
 	+ [Lihat Kamus](#Lihat-Kamus)
 	+ [Cari Kata](#Cari-Kata)
 	+ [Masukan Kata](#Masukan-Kata)
