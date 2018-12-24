@@ -7,7 +7,7 @@
 	+ [Masukan Kata](#Masukan-Kata)
 	+ [Latihan Kata](#Latihan-Kata)
 	+ [Keluar](#Keluar)
-* [HEADER kamus.h](#HEADER-kamus.h)
+* [HEADER kamus.h](#HEADER-kamush)
 
 
 ## DESKRIPSI
