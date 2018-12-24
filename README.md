@@ -26,19 +26,13 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 <p>code</p>
 
 ```go
-// Create a new HTTP client with a default timeout
-timeout := 1000 * time.Millisecond
-client := httpclient.NewClient(httpclient.WithHTTPTimeout(timeout))
-
-// Use the clients GET method to create and execute the request
-res, err := client.Get("http://google.com", nil)
-if err != nil{
-	panic(err)
-}
-
-// Heimdall returns the standard *http.Response object
-body, err := ioutil.ReadAll(res.Body)
-fmt.Println(string(body))
+			case 1://Lihat kata
+				system ("cls");
+				listkata (head);
+				printf("\nTekan Enter untuk lanjutkan: ");
+				getchar();
+				system ("cls");
+				break;
 ```
 
 
