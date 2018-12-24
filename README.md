@@ -655,3 +655,156 @@ int listLen(kamusPtr headR)// Get the length of the linked list (the amount of n
 ```
 
 <p> Menghitung jumlah node pada linked list</p>
+
+### Modular printKamusF
+
+<p>Code:</p>
+
+```go
+void printKamusF(kamusPtr headR, int x) // Print dictionary to file
+{// x = list lenght
+    FILE *fptr;
+    kamusPtr temp;
+    temp = headR;
+    fptr = fopen("kamus.bin", "w");
+
+    fprintf(fptr, "%d\n", x);
+    while(temp!=NULL)
+    {
+        fprintf(fptr, "%s\n", temp->kata);
+        fprintf(fptr, "%s\n", temp->definisi);
+        fprintf(fptr, "%s\n", temp->tipe);
+        temp = temp->next;
+    }
+
+    fclose(fptr);
+}
+```
+
+<p>Menyimpan Semua data pada linked list kedalam file(contohnya menyimpan ke hardisk). Data yang disimpan yaitu panjang dari linked list dan juga isi dari node setiap linked list.</p>
+
+### Modular inputKamus
+
+```go
+void inputKamus(kamusPtr* headW) // Make linked list from file
+{
+    FILE *fptr;
+    fptr = fopen("kamus.bin", "r");
+    kamusPtr temp, prevNode = NULL;
+    int n,i;
+
+    int k,l;
+    fscanf(fptr, "%d\n", &k);
+
+    for(l=0; l<k; l++)
+    {
+    char* inKata = malloc(100*sizeof(char));
+    fgets(inKata, 100, fptr);
+    realloc(inKata, (strlen(inKata)+1)*sizeof(char));
+    strtok(inKata, "\n");
+
+    char* inDef = malloc(200*sizeof(char));
+    fgets(inDef, 200, fptr);
+    realloc(inDef, (strlen(inDef)+1)*sizeof(char));
+    strtok(inDef, "\n");
+
+    char* inTipe = malloc(100*sizeof(char));
+    fgets(inTipe, 100, fptr);
+    realloc(inTipe, (strlen(inTipe)+1)*sizeof(char));
+    strtok(inTipe, "\n");
+
+    kamusPtr inKamus = malloc(sizeof(kamus));
+
+    inKamus->kata = inKata;
+    inKamus->definisi = inDef;
+    inKamus->tipe = inTipe;
+    inKamus->next = NULL;
+
+    if(*headW!=NULL)
+    {
+        i = 0;
+        temp = *headW;
+
+        while(temp!=NULL)
+        {
+            if(strlen(inKamus->kata)<strlen(temp->kata))
+            {
+                n = strlen(inKamus->kata);
+                i = 0;
+                while(i<n)
+                {
+                    if(inKamus->kata[i]==temp->kata[i])
+                    {
+                        i++;
+                    }
+                    else if(inKamus->kata[i]>temp->kata[i])
+                    {
+                        i = n+1;
+                    }
+                    else
+                    {
+                        i = n;
+                    }
+                }
+                i = i-1 ;
+            }
+            else
+            {
+                n = strlen(temp->kata);
+                i = 0;
+                while(i<n)
+                {
+                    if(inKamus->kata[i]==temp->kata[i])
+                    {
+                        i++;
+                    }
+                    else if(inKamus->kata[i]>temp->kata[i])
+                    {
+                        i = n;
+                    }
+                    else
+                    {
+                        i =n+1;
+                    }
+                }
+            }
+            if(i==n)
+            {
+                if(inKamus->next==NULL)
+                {
+                    prevNode = temp;
+                    inKamus->next = prevNode->next;
+                    prevNode->next = inKamus;
+                    temp = inKamus->next;
+                }
+                else
+                {
+                    prevNode->next = temp;
+                    prevNode = temp;
+                    inKamus->next = prevNode->next;
+                    prevNode->next = inKamus;
+                    temp = inKamus->next;
+                }
+
+            }
+            else
+            {
+                if(inKamus->next==NULL)
+                {
+                    inKamus->next = temp;
+                    *headW = inKamus;
+                }
+                temp = NULL;
+            }
+
+        }
+
+    }
+    else
+    {
+        *headW = inKamus;
+    }
+    }
+    fclose(fptr);
+}
+```
