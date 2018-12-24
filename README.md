@@ -414,7 +414,7 @@ case 3://Masukan kata
 
 ## HEADER kamus.h
 
-* Struct dan Data Type
+### Struct dan Data Type
 <p>Code:</p>
 
 ```go
@@ -433,7 +433,7 @@ typedef kamus* kamusPtr;
 <p>Data type "kamus" adalah datatype struct yang dapan menyimpan string dari kata, definisi, dan tipe kata kemudian address dari struct berikutnya.</p>
 <p>Data type "kamusPtr" adalah datatype yang menyimpan address dari memori yang memiliki jenis data type kamus<p/>
 
-* Modular Up_str
+### Modular Up_str
 
 <p>Code:</p>
 
