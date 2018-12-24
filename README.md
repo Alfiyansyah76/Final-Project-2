@@ -10,26 +10,34 @@
 dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melalui opsi insert pada program, dan kata yang sudah di insert akan langsung disorting secara otomatis sesuai abjad. Serta pada program kami terdapat fitur search yang ditujukan untuk mencari kata yang ingin kita mau, serta fitur latihan soal.</p>
 
 <p>Created by:
-  <br>              Aqdam Zain Hajj & Muhammad Alfiyansyah 
+<br>              Aqdam Zain Hajj & Muhammad Alfiyansyah 
 <br>                        Teknik Komputer
 <br>                     Universitas Indonesia</p>
 
 ## MENU
 
-<img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Menu.JPG" alt="Menu">
+<img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/Menu.JPG" alt="Menu">
 
 ### Lihat Kamus
 
-<img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/List%20kata.JPG" alt="Lihat kamus">
+<img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/List%20kata.JPG" alt="Lihat kamus">
 <p> Dapat melihat keseluruhan isi kamus.</p>
 
 ### Cari
 
+<img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/Cari.JPG" alt="Lihat kamus">
+
 ### Masukan Kata
+
+<img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/Masukan.JPG" alt="Lihat kamus">
 
 ### Latihan
 
+<img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/List%20kata.JPG" alt="Lihat kamus">
+
 ### Keluar
+
+<img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/List%20kata.JPG" alt="Lihat kamus">
 
 ## CODE
 
