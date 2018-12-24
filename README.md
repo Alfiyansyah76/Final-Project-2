@@ -112,6 +112,13 @@ int main (void)
 		char pilihC;
 		switch (choice)
 		{
+		case 1:
+		.........
+		.........
+		case 6:
+		}
+	}while (choice!=-1);
+}
 ```
 
 ### Lihat Kamus
