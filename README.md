@@ -498,5 +498,24 @@ void listkata (kamusPtr headR) // Display the content of all node in linked list
 
 <p>Dengan input berupa "head" dari linked list, modular listkata menampilkan kata beserta definisi dan tipenya ke layar komputer(comandline).</p>
 
-
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
+
+### Modular inputKata
+
+<p>Code</p>
+
+```go
+void listkata (kamusPtr headR) // Display the content of all node in linked list to screen
+{
+	kamusPtr temp = headR;
+	printf ("\n\n\t\t\t\t========================================\n");
+	printf ("\t\t\t\t                LIST KATA                   \n");
+    while(temp!=NULL)
+    {
+        printf ("\t\t\t\t+-Kata\t   : %s\n", temp->kata);
+        printf ("\t\t\t\t+-Definsi  : %s\n", temp->definisi);
+        printf ("\t\t\t\t+-Tipe\t   : %s\n\n", temp->tipe);
+        temp = temp->next;
+    }
+}
+```
