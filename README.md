@@ -196,6 +196,18 @@ int main (void)
 ### Masukan Kata
 
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/Masukan.JPG" alt="Lihat kamus">
+<p>Memasukan kata baru ke dalam kamus, inputnya berupa Kata, Definisi, dan Tipe katanya. Kata yang telah dimasukan akan otomatis terurut sesuai abjad</p>
+
+```go
+case 3://Masukan kata
+				system ("cls");
+   				inputKata(&head);
+   				printKamusF(head, listLen(head));
+   				printf("\nTekan Enter untuk lanjutkan: ");
+   				getchar();
+   				system ("cls");
+    			break;
+```
 
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
 
