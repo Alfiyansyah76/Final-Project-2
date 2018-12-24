@@ -25,7 +25,7 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 
 <p>code</p>
 
-```
+```go
 // Create a new HTTP client with a default timeout
 timeout := 1000 * time.Millisecond
 client := httpclient.NewClient(httpclient.WithHTTPTimeout(timeout))
@@ -39,6 +39,7 @@ if err != nil{
 // Heimdall returns the standard *http.Response object
 body, err := ioutil.ReadAll(res.Body)
 fmt.Println(string(body))
+```
 
 
 ### Cari
