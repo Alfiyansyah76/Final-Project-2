@@ -62,7 +62,7 @@ untuk mengubah atau megakses isinya dengan cara berikut: `n.x` untuk data x atau
 <p> linked list adalah linear collection dari self-referential structures, yang disebut node, terhubung oleh rantai pointer. Node berikutnya diakses melalui rantai pointer yang disimpan oleh anggota
 setiap node.
 
-<img src="Image/8832.jpg" width="360">
+<img src="Image/8832.jpg" width="480">
 
 ## MENU
 
