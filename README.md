@@ -25,8 +25,7 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 
 <p>Aplikasi Kami menggunakan bahasa pemprogramman C. Beberapa penggunaan bahasa pemprogramman C yang penting dalam program kami adalah pointer, struct, dan linked, berikut penjelasan masing-masingya.</p>
 
-* Pointer
-<p>Pointer merupakan variabel yang menyimpan address dari memori(variabel lain)</p>
+* Pointer<p>Pointer merupakan variabel yang menyimpan address dari memori(variabel lain)</p>
 	
 
 ## MENU
