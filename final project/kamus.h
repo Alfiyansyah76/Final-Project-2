@@ -104,25 +104,25 @@ void inputKata(kamusPtr *headW)// Input new node and the content to the linked l
         inKamus->tipe = inTipe;
         inKamus->next = NULL;
 
-        if(*headW!=NULL)
+        if(*headW!=NULL)// Memasukan node ke dalam linked list
         {
             i = 0;
             temp = *headW;
 
-            while(temp!=NULL)
+            while(temp!=NULL)// Pertama node di masukan kedalam list dengan metode stack, kemudian
             {
-                if(strlen(inKamus->kata)<strlen(temp->kata))
-                {
+                if(strlen(inKamus->kata)<strlen(temp->kata))// membandingkan panjang "kata" dalam input node dengan node dibawahnya
+                { //jika panjang kata dari input kata lebih besar dari dibawahnya, input kata bertukar tempat dengan dibawahnya
                     n = strlen(inKamus->kata);
                     i = 0;
                     while(i<n)
                     {
-                        if(inKamus->kata[i]==temp->kata[i])
-                        {
+                        if(inKamus->kata[i]==temp->kata[i])//Selanjutnya membandingkan tiap karakter pada input kata dengan node yang dibandingkan
+                        {//Jika karakternya sama maka operasi berlanjut
                             i++;
                         }
                         else if(inKamus->kata[i]>temp->kata[i])
-                        {
+                        {//Jika karakternya lebih besar. input kata bertukar tempat kebawah dengan node yang dibandingkan
                             i = n+1;
                         }
                         else
@@ -149,7 +149,7 @@ void inputKata(kamusPtr *headW)// Input new node and the content to the linked l
                         else
                         {
                             i =n+1;
-                        }
+                        }//terus berulang sampai input kata tidak pindah kebawah
                     }
                 }
                 if(i==n)
