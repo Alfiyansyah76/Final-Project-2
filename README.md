@@ -7,7 +7,7 @@
 	+ [Masukan Kata](#Masukan-Kata)
 	+ [Latihan Kata](#Latihan-Kata)
 	+ [Keluar](#Keluar)
-* [kamus.h](#code)
+* [HEADER kamus.h](#HEADER-kamus.h)
 
 
 ## DESKRIPSI
@@ -195,5 +195,5 @@ int main (void)
 
 
 
-## kamus.h
+## HEADER kamus.h
 
