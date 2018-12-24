@@ -433,7 +433,7 @@ typedef kamus* kamusPtr;
 <p>Data type "kamus" adalah datatype struct yang dapan menyimpan string dari kata, definisi, dan tipe kata kemudian address dari struct berikutnya.</p>
 <p>Data type "kamusPtr" adalah datatype yang menyimpan address dari memori yang memiliki jenis data type kamus<p/>
 
-### Modular Up_str
+### Modular up_str
 
 <p>Code:</p>
 
@@ -449,6 +449,54 @@ void up_str(char* strW) // Capitalize first character of string
 }
 ```
 <p>Fungsinya adalah membuat huruf depan pada string selal menjadi huruf kapital, yaitu dengan cara membandingkan index pertama dari string dengan code asscii dari karakter. Nilai yang lebih dari 90 puluh adalah berupa huruf kecil. jikai nilai ascii dari index pertama lebih dari 90 nilai asciinya dikurangi 32 sehingga menjadi huruf kapital.</p>
+
+### Modular pilihan_yn
+
+<p>Code:</p>
+
+```go
+int pilihan_yn(char x)//x expect the input y/n
+{
+    int n;
+    n = x;
+    if( n < 90)
+    {
+        x = x + 32;
+    }
+    if(x=='y')
+    {
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
+}
+```
+
+<p>Dengan meminta input berupa karakter 'y' atau 'n', fungsi pilihan_yn memprosesnya dengan mereturn bilangan integer 0 jika inputnya adala karakter 'y'.</p>
+
+### Modular listkata
+
+<p>Code:</p>
+
+```go
+void listkata (kamusPtr headR) // Display the content of all node in linked list to screen
+{
+	kamusPtr temp = headR;
+	printf ("\n\n\t\t\t\t========================================\n");
+	printf ("\t\t\t\t                LIST KATA                   \n");
+    while(temp!=NULL)
+    {
+        printf ("\t\t\t\t+-Kata\t   : %s\n", temp->kata);
+        printf ("\t\t\t\t+-Definsi  : %s\n", temp->definisi);
+        printf ("\t\t\t\t+-Tipe\t   : %s\n\n", temp->tipe);
+        temp = temp->next;
+    }
+}
+```
+
+<p>Dengan input berupa "head" dari linked list, modular listkata menampilkan kata beserta definisi dan tipenya ke layar komputer(comandline).</p>
 
 
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
