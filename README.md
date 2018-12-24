@@ -19,6 +19,7 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/Menu.JPG" alt="Menu">
 
 <p>code:</p>
+
 ```go
 #include "kamus.h" // terdapat struct dan semua fungsi modular yang mendukung applikasi kamus
 
