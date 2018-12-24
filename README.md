@@ -24,7 +24,7 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 <p> Dapat melihat keseluruhan isi kamus.</p>
 
 <p>code</p>
-```go
+```
 // Create a new HTTP client with a default timeout
 timeout := 1000 * time.Millisecond
 client := httpclient.NewClient(httpclient.WithHTTPTimeout(timeout))
