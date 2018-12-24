@@ -24,12 +24,13 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 <p> Dapat melihat keseluruhan isi kamus.</p>
 
 <p>code</p>
-```go
-				system ("cls");
-				listkata (head);
-				printf("\nTekan Enter untuk lanjutkan: ");
-				getchar();
-				system ("cls");
+```
+go
+system ("cls");
+listkata (head);
+printf("\nTekan Enter untuk lanjutkan: ");
+getchar();
+system ("cls");
 ```
 
 ### Cari
