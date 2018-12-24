@@ -248,7 +248,7 @@ int main (void)
                 getchar();
                 system("cls");
                 break;
-    		case 6://Kemuar
+    		case 6://Keluar
     		    printf("\a\n\n\t Anda yakin ingin keluar aplikasi?(y/n): ");
     		    scanf("%c", &pilihC);
     		    getchar();
