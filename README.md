@@ -233,7 +233,7 @@ case 3://Masukan kata
                 for(i=0; i<soal; i++) // mengambil soal dari linked list
                 {
                     radnum = rand()%(llen);
-                    takeNode(&headCpy, radnum, &node);
+                    takeNode(&headCpy, radnum, &node);//mengambi node dalam list yang telah dicopy kemudian menghapus node tersebut pada list yang telah dicopy seperti mengambil kelereng dalam toples
                     soalArr[i] = node; // Memasukan address node yang telah diambil dari list ke dalam array
                     // soalArr = kumpulan address dari node yang akan menjadi soal dari latihan
                     llen = llen-1;
@@ -241,7 +241,7 @@ case 3://Masukan kata
 
                 for(i=0; i<soal; i++)
                 {
-                    randnumArr(intArr, 4);
+                    randnumArr(intArr, 4);//menyusun 4 bilangan dari 0 sampai 3 secara acak kedalam array intArr
                     do
                     {
                         printf(" %s\n\n", (soalArr[i]->definisi));
@@ -321,7 +321,7 @@ case 3://Masukan kata
                 for(i=0; i<soal; i++) // mengambil soal dari linked list
                 {
                     radnum = rand()%(llen);
-                    takeNode(&headCpy, radnum, &node);
+                    takeNode(&headCpy, radnum, &node);//mengambi node dalam list yang telah dicopy kemudian menghapus node tersebut pada list yang telah dicopy seperti mengambil kelereng dalam toples
                     soalArr[i] = node; // Memasukan address node yang telah diambil dari list ke dalam array
                     // soalArr = kumpulan address dari node yang akan menjadi soal dari latihan
                     llen = llen-1;
@@ -329,7 +329,7 @@ case 3://Masukan kata
 
                 for(i=0; i<soal; i++)
                 {
-                    randnumArr(intArr, 4);
+                    randnumArr(intArr, 4);//menyusun 4 bilangan dari 0 sampai 3 secara acak kedalam array intArr
                     do
                     {
                         printf(" %s\n\n", (soalArr[i]->definisi));
