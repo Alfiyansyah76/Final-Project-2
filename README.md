@@ -24,6 +24,7 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 <p> Dapat melihat keseluruhan isi kamus.</p>
 
 <p>code</p>
+
 ```
 // Create a new HTTP client with a default timeout
 timeout := 1000 * time.Millisecond
@@ -38,7 +39,7 @@ if err != nil{
 // Heimdall returns the standard *http.Response object
 body, err := ioutil.ReadAll(res.Body)
 fmt.Println(string(body))
-```
+
 
 ### Cari
 
