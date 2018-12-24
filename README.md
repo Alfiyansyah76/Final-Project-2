@@ -43,6 +43,21 @@ contoh lainnya, yaitu `z = *x` ( `*x` pada sebelah kanan assigment artinya adala
 * Struct
 <p>Sebuah struct dalam bahasa pemrograman C adalah deklarasi tipe data komposit yang mendefinisikan daftar variabel yang dikelompokkan untuk ditempatkan di bawah satu nama dalam blok memori, yang memungkinkan variabel yang berbeda untuk diakses melalui satu pointer</p>
 
+contohnya, yaitu:
+```go
+struct node{
+int x;
+float y;
+char z;
+}
+
+struct node n;
+```
+
+<img src="Image/8831.jpg" width="360">
+
+untuk mengubah atau megakses isinya dengan cara berikut: `n.x` untuk data x tau jika dalam pointer misal `q = &n` kemudian `q->x` untuk mengakses data x.
+
 ## MENU
 
 <img src="Image/Menu.JPG" alt="Menu">
