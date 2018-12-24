@@ -685,6 +685,8 @@ void printKamusF(kamusPtr headR, int x) // Print dictionary to file
 
 ### Modular inputKamus
 
+<p>Code:</p>
+
 ```go
 void inputKamus(kamusPtr* headW) // Make linked list from file
 {
@@ -808,3 +810,9 @@ void inputKamus(kamusPtr* headW) // Make linked list from file
     fclose(fptr);
 }
 ```
+
+<p>Membuat linked list yang bertipe kamus dengan input datanya berasal dari file. Cara kerjanya,yaitu:
+<br>1. Mengalokasikan memori untuk tiap node dan string data lalu menginput data dengan membacanya dari file secara sequential.
+<br>2. Setelah data diinput dari file data di sorting berdasarkan abjad pada linked list.</p>
+
+[Kembali ke daftar isi](#kamus-bahasa-indonesia)
