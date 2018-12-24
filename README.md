@@ -897,4 +897,80 @@ void randnumArr(int* arNum, int x)// Generate each different random number in ar
 
 <p>Modular randnumArr berfungsi memasukan angka(integer mulai dari 0) yang berurutan secara acak ke dalam array. Cara kerjanya yaitu jika nilai 2 telah didapatkan dan dimasukan ke dalam array index 0, nilai 2 tidak boleh masuk kedalam index berikutnya jika muncul kembali, seterusnya berlaku untuk bilangan lainya.</p>
 
+### Modular takeNode
+
+<p>Code:</p>
+
+```go
+void takeNode(kamusPtr *headW, int index, kamusPtr* nodeW)// Get the Node from linked list and delete the node in linked list
+{ // index = index of the node (begin with 0); nodeW = return the address of the node
+    int i;
+    index = index + 1;
+    kamusPtr temp, prevNode=NULL, currentNode=NULL;
+
+    temp = *headW;
+    if(index!=1)
+    {
+        for(i=0; i<index; i++)
+        {
+
+                prevNode = currentNode;
+                currentNode = temp;
+                temp = temp->next;
+        }
+        prevNode->next = currentNode->next;
+        currentNode->next = NULL;
+        *nodeW = currentNode;
+
+    }
+    else
+    {
+        *nodeW = *headW;
+        *headW = (*headW)->next;
+        (*nodeW)->next = NULL;
+
+    }
+
+}
+```
+
+<p>Mengambil node dalam linked list sesuai dengan index yang dimaksud. Node yang diambil addressnya akan disimpan kedalam variabel dan rantai pada linked listnya diputus sehingga node tersebut tidak ada pada linked list, hanya ada pada variabel tertentu.</p>
+
+### Modular 
+
+<p>Code:</p>
+
+```go
+void answerChKat(kamusPtr headR, int x, char* answerR, char* *answerW)
+{
+    int n, k, i;
+    kamusPtr temp, next;
+    next = headR;
+    k = 0;
+    do
+    {
+        n = (rand()%x);
+        n = n+1;
+        for(i=0; i<n; i++)
+        {
+            temp = next;
+            next = next->next;
+        }
+        if(strcmp(temp->kata,answerR)==0)
+        {
+            next = headR;
+        }
+        else
+        {
+            *answerW = temp->kata;
+            k = -1;
+        }
+
+    }while(k!=-1);
+
+}
+```
+
+<p> Mengcopy kata dari linked list dengan pilihan secara acak. Jika input kata pada fungsi sama dengan kata yang dipilih. fungsi akan memilih ulang kata secara acak untuk dicopy.</p>
+
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
