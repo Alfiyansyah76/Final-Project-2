@@ -1,6 +1,6 @@
-# Kamus Bahasa Indonesia
+# KAMUS BAHASA INDONESIA
 * [Deskripsi](#deskripsi)
-* [PENGGUNAAN BAHASA PEMPROGRAMMAN C](#PENGGUNAAN-BAHASA-PEMPROGRAMMAN-C)
+* [Penggunaan Bahasa Pemprogramman C](#PENGGUNAAN-BAHASA-PEMPROGRAMMAN-C)
 * [Menu](#Menu)
 	+ [Lihat Kamus](#Lihat-Kamus)
 	+ [Cari Kata](#Cari-Kata)
