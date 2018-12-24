@@ -414,4 +414,23 @@ case 3://Masukan kata
 
 ## HEADER kamus.h
 
+* Struct dan Data Type
+<p>Code:</p>
+
+```go
+struct node1
+{
+    char* kata;
+    char* definisi;
+    char* tipe;
+    struct node1* next;
+};
+
+typedef struct node1 kamus;
+typedef kamus* kamusPtr;
+```
+
+<p>Data type kamus adalah datatype struct yang dapan menyimpan string dari kata, definisi, dan tipe kata kemudian address dari struct berikutnya.</p>
+<p>Data type kamusPtr adalah datatype yang menyimpan address dari memori yang memiliki jenis data type kamus<p/>
+
 [Kembali ke daftar isi](#kamus-bahasa-indonesia)
