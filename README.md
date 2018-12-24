@@ -128,7 +128,8 @@ int main (void)
 	}while (choice!=-1);
 }
 ```
-[Kembali ke daftar isi](#Keluar)
+
+[Kembali ke daftar isi](##kamus-bahasa-indonesia)
 
 ### Lihat Kamus
 
@@ -182,9 +183,13 @@ int main (void)
 				break;
 ```
 
+[Kembali ke daftar isi](##kamus-bahasa-indonesia)
+
 ### Masukan Kata
 
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/Masukan.JPG" alt="Lihat kamus">
+
+[Kembali ke daftar isi](##kamus-bahasa-indonesia)
 
 ### Latihan
 
@@ -192,9 +197,12 @@ int main (void)
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/soal2.JPG" alt="Lihat kamus">
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/Soal3.JPG" alt="Lihat kamus">
 
+[Kembali ke daftar isi](##kamus-bahasa-indonesia)
+
 ### Keluar
 
-
+[Kembali ke daftar isi](##kamus-bahasa-indonesia)
 
 ## HEADER kamus.h
 
+[Kembali ke daftar isi](##kamus-bahasa-indonesia)
