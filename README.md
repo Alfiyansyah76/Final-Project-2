@@ -26,11 +26,19 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 <p>Aplikasi Kami menggunakan bahasa pemprogramman C. Beberapa penggunaan bahasa pemprogramman C yang penting dalam program kami adalah pointer, struct, dan linked, berikut penjelasan masing-masingya.</p>
 
 * Pointer
-<p>Pointer merupakan variabel yang menyimpan address dari memori(variabel lain)</p>
+<p>Pointer merupakan variabel yang menyimpan address dari memori(variabel lain).</p>
 
 Contohnya, yaitu: `int* x = &y`  ( `&y` artinya adalah address dari variabel y sendangkan ``int* x`` adalah variabel x sebagai pointer).
 
-<img src="Image/8802.jpg" width="360">
+<img src="Image/8802.jpg" width="480">
+
+pointer dereference contohnya, yaitu `*x = a` ( `*x` pada sebelah kiri assigment artinya adalah ke alamat memori yang terdapat pada variabel x kemudian ubah isi(data) dari address tersebut menjadi 'a' ).
+
+<img src="Image/8803.jpg" width="480">
+
+contoh lainnya, yaitu `z = *x` ( `*x` pada sebelah kanan assigment artinya adalah ke alamat memori yang terdapat pada variabel x kemudian copy isi(data) dari memori tersebut ke variabel z ).
+
+<img src="Image/8804.jpg" width="480">
 
 * Struct
 <p>Sebuah struct dalam bahasa pemrograman C adalah deklarasi tipe data komposit yang mendefinisikan daftar variabel yang dikelompokkan untuk ditempatkan di bawah satu nama dalam blok memori, yang memungkinkan variabel yang berbeda untuk diakses melalui satu pointer</p>
