@@ -89,7 +89,7 @@ int main (void)
 		char pilihC;
 		switch (choice)
 		{
-			case 1://lihat kamus
+			case 1://Lihat kata
 				system ("cls");
 				listkata (head);
 				printf("\nTekan Enter untuk lanjutkan: ");
@@ -115,6 +115,7 @@ int main (void)
                     temp = temp->next;
                 }
 				getch();
+				//free the memory allocation after used
 				free(key);
 				system ("cls");
 				break;
@@ -155,10 +156,11 @@ int main (void)
                     do
                     {
                         printf(" %s\n\n", (soalArr[i]->definisi));
-                        jwbArr[intArr[0]] = soalArr[i]->kata;
+                        jwbArr[intArr[0]] = soalArr[i]->kata;//Input pilihan benar ke array dengan nilai index yg random sesuai urutan
                         for(j=1; j<4; j++)
-                        {
-                            answerChKat(head, listLen(head), soalArr[i]->kata, &jwbArr[intArr[j]]);
+                        {//input pilihan salah ke array dengan nilai index yg random sesuai urutan
+                            answerChKat(head, listLen(head), soalArr[i]->kata, &jwbArr[intArr[j]]);//mengambil pilihan salah dari linked list secara acak yang berbeda dengan
+                                                                                                        //pilihan benar.
                         }
                         for(j=0; j<4; j++)
                         {
@@ -171,7 +173,7 @@ int main (void)
 
                     }while(jwb<1 || jwb>4);
 
-                    if(strcmp(jwbArr[jwb-1], soalArr[i]->kata)==0)
+                    if(strcmp(jwbArr[jwb-1], soalArr[i]->kata)==0)//menghitung nilai jawaban yang benar
                     {
                         correct = correct + 1;
                         printf("\a");
@@ -184,6 +186,7 @@ int main (void)
                     Sleep(200);
                     system("cls");
                 }
+                //menampilkan jawaban benar dan salah
                 printf("\n\n Jumlah Benar: %d\n", correct);
                 printf(" Salah       : %d\n", (soal-correct));
 
@@ -205,6 +208,7 @@ int main (void)
                     headCpy = headCpy->next;
                     free(temp);
                 }
+
                 printf("\n Enter untuk kembali ke menu: ");
                 getchar();
                 system("cls");
@@ -244,11 +248,12 @@ int main (void)
                 getchar();
                 system("cls");
                 break;
-    		case 6://Keluar
+    		case 6://Kemuar
     		    printf("\a\n\n\t Anda yakin ingin keluar aplikasi?(y/n): ");
     		    scanf("%c", &pilihC);
     		    getchar();
 
+    		    //free the memory allocation after used
     		    if(pilihan_yn(pilihC)==0)
                 {
                     while(headCpy!=NULL)
