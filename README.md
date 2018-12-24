@@ -202,7 +202,7 @@ int main (void)
 
 ### Keluar
 
-[Kembali ke daftar isi](#kamus-bahasa-indonesia))
+[Kembali ke daftar isi](#kamus-bahasa-indonesia)
 
 ## HEADER kamus.h
 
