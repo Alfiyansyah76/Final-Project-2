@@ -1,7 +1,7 @@
 # Kamus Bahasa Indonesia
 * [Deskripsi](#deskripsi)
 * [Menu](#Menu)
-* [Code](#code)
+* [kamus.h](#code)
 
 
 ## Deskripsi
@@ -39,5 +39,5 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 
 <img src="https://raw.githubusercontent.com/Alfiyansyah76/Kamus-Bahasa-Indonesia/master/Image/List%20kata.JPG" alt="Lihat kamus">
 
-## CODE
+## kamus.h
 
