@@ -1,4 +1,5 @@
 # KAMUS BAHASA INDONESIA
+
 * [Deskripsi](#deskripsi)
 * [Penggunaan Bahasa Pemprogramman C](#PENGGUNAAN-BAHASA-PEMPROGRAMMAN-C)
 * [Penjelasan Menu](#MENU)
@@ -23,6 +24,7 @@ dapat mengupdate isi kamus dengan menginput kata, definisi, dan tipe kata, melal
 ## PENGGUNAAN BAHASA PEMPROGRAMMAN C
 
 <p>Aplikasi Kami menggunakan bahasa pemprogramman C. kami merasa perlu menjelaskan mengenai pointer, struct, dan linked list karena sangat penting penggunaanya bagi program kami.</p>
+
 * Struct
 	
 
