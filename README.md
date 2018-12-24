@@ -1,12 +1,11 @@
 # Kamus Bahasa Indonesia
 * [Deskripsi](#deskripsi)
 * [Menu](#Menu)
-	+[Lihat Kamus](#Lihat Kamus)
-	+[Cari Kata](#Cari Kata)
-	+[Masukan Kata](#Masukan Kata)
-	+[Latihan Kata](#Latihan Kata)
-	+[Bantuan](#Bantuan)
-	+[Keluar](#Keluar)
+	+ [Lihat Kamus](#Lihat Kamus)
+	+ [Cari Kata](#Cari Kata)
+	+ [Masukan Kata](#Masukan Kata)
+	+ [Latihan Kata](#Latihan Kata)
+	+ [Keluar](#Keluar)
 * [kamus.h](#code)
 
 
