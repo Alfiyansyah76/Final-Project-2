@@ -1,10 +1,10 @@
 #include "kamus.h" // terdapat struct dan semua fungsi modular yang mendukung applikasi kamus
-
 #include <conio.h>
 #include <windows.h>
 #include <process.h>
 
-
+/*Nama Kelompok = Aqdam Zain Hajj
+		  Muhammad Alfiyansyah */
 
 void gotoxy (int x, int y)
 {
