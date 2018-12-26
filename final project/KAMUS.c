@@ -31,25 +31,11 @@ int main (void)
 			printf ("%c", 177);
 		}
 
-		inputKamus(&head);
+		
 	do
 	{
 
 		system ("cls");
-		/*printf ("\n\n\t\t\t\t========================================\n");
-		printf ("\t\t\t\t========================================\n");
-		printf ("\t\t\t\t+        KAMUS BAHASA INDONESIA        +");
-		printf ("\n\t\t\t\t+                                      +");
-		printf ("\n\t\t\t\t+ 1. Lihat Kamus                       +");
-		printf ("\n\t\t\t\t+ 2. Cari Kata                         +");
-		printf ("\n\t\t\t\t+ 3. Insert Kata                       +");
-		printf ("\n\t\t\t\t+ 4. Latihan Kata                      +");
-		printf ("\n\t\t\t\t+ 5. Help                              +");
-		printf ("\n\t\t\t\t+ 6. Exit                              +");
-		printf ("\n\t\t\t\t+                                      +");
-		printf ("\n\t\t\t\t+             COPYRIGHT                +");
-		printf ("\n\t\t\t\t========================================");
-		printf ("\n\t\t\t\t========================================");*/
 		printf("  		    `-::://///:+...-.......-..`                `--....--.........`                \n"
 "	            .s::::///::--`             .---.         ---.`                `----`                    \n"
 "	       ``...-o::--`                       `.:-     -:.```                      .--.                 \n"
