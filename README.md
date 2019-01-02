@@ -938,7 +938,7 @@ void takeNode(kamusPtr *headW, int index, kamusPtr* nodeW)// Get the Node from l
 
 <p>Mengambil node dalam linked list sesuai dengan index yang dimaksud. Node yang diambil addressnya akan disimpan kedalam variabel dan rantai pada linked listnya diputus sehingga node tersebut tidak ada pada linked list, hanya ada pada variabel tertentu.</p>
 
-### Modular 
+### Modular answerChKat
 
 <p>Code:</p>
 
